@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сокогийн вэб</title>
+    <style> 
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        h2 {
+            text-align: center;
+            font-style: italic;
+            color: white;
+            padding: 15px;
+        }
+
+        .sidebar {
+            width: 20%;
+            background-color: pink;
+            padding: 20px;
+        }
+
+        .sidebar a {
+            text-align: center;
+            display: block;
+            text-decoration: none;
+            font-size: 30px;
+            background-color: hotpink;
+            color: white;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 10px;
+        }
+
+        .sidebar a:hover {
+            background-color: deeppink;
+        }
+
+        .content-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .content {
+            font-size: 20px;
+            width: 70%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .content div {
+            width: 48%;
+        }
+
+        .images {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .images img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: hotpink;
+            color: white;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<table border="1" width="100%" height="800px">
+    <tr height="10%">
+        <td colspan="3" style="background-color: hotpink;">
+            <h2>Гэр бүл</h2>
+        </td>
+    </tr>
+
+    <tr> 
+        <td class="sidebar">
+            <a href="index.html">Нүүр хуудас</a>
+            <a href="about.html">Миний тухай</a>
+            <a href="family.html">Гэр бүл</a>
+            <a href="friends.html">Найзууд</a>
+            <a href="contact.html">Холбоо барих</a>
+        </td>
+        <td colspan="2">
+            <div class="content-container">
+                <div class="content">
+                    <div>
+                        <h3>✨Аав</h3>
+                        <p><span class="highlight">Нэр:</span> Алтанхуяг</p>
+                        <p><span class="highlight">Нас:</span> 44</p>
+                        <p><span class="highlight">Ажил мэргэжил:</span> Зөвлөх</p>
+                        <p><span class="highlight">Хобби, сонирхол:</span> Шатар тоглох, кино үзэх</p>
+                    </div>
+                    <div>
+                        <h3>✨Ээж</h3>
+                        <p><span class="highlight">Нэр:</span> Наранцэцэг</p>
+                        <p><span class="highlight">Нас:</span> 43</p>
+                        <p><span class="highlight">Ажил мэргэжил:</span> Багш</p>
+                        <p><span class="highlight">Хобби, сонирхол:</span> Аялах, гар бөмбөг тоглох</p>
+                    </div>
+                    <div>
+                        <h3>✨Дүү 1</h3>
+                        <p><span class="highlight">Нэр:</span> Итгэлт </p>
+                        <p><span class="highlight">Нас:</span> 12</p>
+                        <p><span class="highlight">Сургууль:</span> 6-р анги</p>
+                        <p><span class="highlight">Хобби, сонирхол:</span> Гар утсаар тоглох, гар бөмбөг тоглох, сэлэх</p>
+                    </div>
+                    <div>
+                        <h3>✨Дүү 2</h3>
+                        <p><span class="highlight">Нэр:</span> Мишээл </p>
+                        <p><span class="highlight">Нас:</span> 8</p>
+                        <p><span class="highlight">Сургууль:</span> 2-р анги</p>
+                        <p><span class="highlight">Хобби, сонирхол:</span> Зураг зурах, шатар тоглох, нэхмэл нэхэх</p>
+                    </div>
+                </div>
+
+                <div class="images">
+                    <img src="https://scontent.fuln1-1.fna.fbcdn.net/v/t1.6435-9/92875572_2726841740768838_7037951544024629248_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=94e2a3&_nc_ohc=XOXn0UD0nM4Q7kNvgGI_kyS&_nc_oc=AdjtXBumbRvxhyLiL-HQoH4xqeLw6jTFpFnCaolGgg_RUn4vyClKucfkhKV6YFW7zyiuHPa0_fecJcE91c6ctoHA&_nc_zt=23&_nc_ht=scontent.fuln1-1.fna&_nc_gid=AN0J6ctijFE2vcxbB22FaQX&oh=00_AYB19-VXob5-ywY6N3k-sigjrl6qTPkQpebD7VWbhUozbw&oe=67DBCB9C" >
+                </div>
+            </div>
+        </td>
+    </tr>
+
+    <tr height="5%">
+        <td colspan="3">
+            <footer>&copy; 2025 Сокогийн вэб</footer>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
