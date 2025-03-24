@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сокогийн вэб</title>
+    <style> 
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        h2 {
+            text-align: center;
+            font-style: italic;
+            color: white;
+            padding: 15px;
+        }
+
+        .sidebar {
+            width: 20%;
+            background-color: pink;
+            padding: 20px;
+        }
+
+        .sidebar a {
+            text-align: center;
+            display: block;
+            text-decoration: none;
+            font-size: 30px;
+            background-color: hotpink;
+            color: white;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 10px;
+        }
+
+        .sidebar a:hover {
+            background-color: deeppink;
+        }
+
+        .content-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .content {
+            font-size: 20px;
+            width: 70%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .content div {
+            width: 48%;
+        }
+
+        .images {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .images img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: hotpink;
+            color: white;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<table border="1" width="100%" height="800px">
+    <tr height="10%">
+        <td colspan="3" style="background-color: hotpink;">
+            <h2>Гэр бүл</h2>
+        </td>
+    </tr>
+
+    <tr> 
+        <td class="sidebar">
+            <a href="index.html">Нүүр хуудас</a>
+            <a href="about.html">Миний тухай</a>
+            <a href="family.html">Гэр бүл</a>
+            <a href="friends.html">Найзууд</a>
+            <a href="contact.html">Холбоо барих</a>
+        </td>
+        <td colspan="2">
+            <div class="content-container">
+                <div class="content">
+                    <div>
+                        <h3>✨Найз 1</h3>
+                        <p><span class="highlight">Нэр:</span> Солонго</p>
+                        <p><span class="highlight">Нас:</span> 19</p>
+                        <p><span class="highlight">Сургууль:</span> МУИС-ОУХНУС-Олон улсын харилцаа</p>
+                        <p><span class="highlight">Хобби, сонирхол:</span> Ном унших</p>
+                    </div>
+                    <div>
+                        <h3>✨Найз 2</h3>
+                        <p><span class="highlight">Нэр:</span> Энхмэнд</p>
+                        <p><span class="highlight">Нас:</span> 19</p>
+                        <p><span class="highlight">Ажил мэргэжил:</span> АШУИС-Шүдний эмч</p>
+                        <p><span class="highlight">Хобби, сонирхол:</span> Аялах</p>
+                    </div>
+                    <div>
+                        <h3>✨Найз 3</h3>
+                        <p><span class="highlight">Нэр:</span> Зүмүү </p>
+                        <p><span class="highlight">Нас:</span> 20</p>
+                        <p><span class="highlight">Сургууль:</span> МУИС-ШУС-БУС-Био инженерчлэл</p>
+                        <p><span class="highlight">Хобби, сонирхол:</span> Кино үзэх</p>
+                    </div>
+                    <div>
+                        <h3>✨Найз 4</h3>
+                        <p><span class="highlight">Нэр:</span> Отгоо </p>
+                        <p><span class="highlight">Нас:</span> 20</p>
+                        <p><span class="highlight">Хобби, сонирхол:</span> Дуулах</p>
+                    </div>
+                </div>
+
+                <div class="images">
+                    <img src="https://scontent.fuln1-2.fna.fbcdn.net/v/t39.30808-6/240672589_857388428304366_7490369820337219158_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=2285d6&_nc_ohc=6-RRQg5NcYQQ7kNvgFhtGjR&_nc_oc=AdgX_OR1jR6t3U6EXf1MPqVPljxt8Haf2kUQVkZ_I93xy04CN0dY-yuNJEEfD_wEZJ3qqfpiFSF7lzLT8J370Z2p&_nc_zt=23&_nc_ht=scontent.fuln1-2.fna&_nc_gid=AMZjad5LOiXADu5wLQUbigD&oh=00_AYBHkkm6ecdd2F3NsHf-1N-tQRQexujEpLW4h5-BhsLOCw&oe=67BA36E9" >
+                </div>
+            </div>
+        </td>
+    </tr>
+
+    <tr height="5%">
+        <td colspan="3">
+            <footer>&copy; 2025 Сокогийн вэб</footer>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
+
