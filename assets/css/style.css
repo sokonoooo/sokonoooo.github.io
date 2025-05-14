@@ -1066,6 +1066,7 @@ div.row.align-items-center.counter-wrapper.gy-6.text-center {
     background: white;
     padding: 1rem;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    display: none;
   }
 
   .navbar-nav {
