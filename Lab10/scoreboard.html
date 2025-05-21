@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <title>Шилдэг тоглогчид</title>
+  <style>
+    body {
+      background-color: #1a1a1a;
+      color: white;
+      font-family: sans-serif;
+      text-align: center;
+      padding-top: 50px;
+    }
+    table {
+      margin: 0 auto;
+      border-collapse: collapse;
+      width: 80%;
+      max-width: 500px;
+    }
+    th, td {
+      border: 1px solid white;
+      padding: 10px;
+    }
+    button {
+      padding: 10px;
+      font-size: 1rem;
+      margin: 10px;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: lightblue;
+      color: #1a1a1a;
+    }
+  </style>
+</head>
+<body>
+  <h1>🏆 Шилдэг 10 тоглогч</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>№</th>
+        <th>Нэр</th>
+        <th>Оноо</th>
+      </tr>
+    </thead>
+    <tbody id="scoreList"></tbody>
+  </table>
+
+  <button id="backButton">🔁 Буцах</button>
+
+<script>
+window.onload = function() {
+  displayScores();
+
+  document.getElementById('backButton').addEventListener('click', () => {
+    window.location.href = 'nickname.html';
+  });
+};
+
+function displayScores() {
+  let data = JSON.parse(localStorage.getItem("hangmanTopScores") || "[]");
+
+  data = data.filter(entry =>
+    entry &&
+    typeof entry.name === "string" &&
+    typeof entry.score === "number" &&
+    !isNaN(entry.score)
+  );
+
+  data.sort((a, b) => b.score - a.score);
+
+  const tbody = document.getElementById("scoreList");
+  tbody.innerHTML = "";
+
+  data.slice(0, 10).forEach((entry, index) => {
+    const tr = document.createElement("tr");
+
+    const tdIndex = document.createElement("td");
+    tdIndex.textContent = index + 1;
+    tr.appendChild(tdIndex);
+
+    const tdName = document.createElement("td");
+    tdName.textContent = entry.name;
+    tr.appendChild(tdName);
+
+    const tdScore = document.createElement("td");
+    tdScore.textContent = entry.score;
+    tr.appendChild(tdScore);
+
+    tbody.appendChild(tr);
+  });
+}
+</script>
+
+</body>
+</html>

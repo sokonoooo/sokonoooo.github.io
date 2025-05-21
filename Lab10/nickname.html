@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8" />
+  <title>Нэрээ оруулна уу</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: white;
+      font-family: sans-serif;
+      text-align: center;
+      padding-top: 100px;
+    }
+    input, button {
+      padding: 10px;
+      font-size: 1rem;
+      margin: 10px;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: lightblue;
+      color: #1a1a1a;
+    }
+  </style>
+</head>
+<body>
+  <h1>Тоглоом эхлэхийн тулд нэрээ оруулна уу</h1>
+  <input type="text" id="nickname" placeholder="Нэрээ бичнэ үү" />
+  <br />
+  <button onclick="startGame()">Эхлэх</button>
+
+  <script>
+    function startGame() {
+      const nickname = document.getElementById("nickname").value.trim();
+      if (!nickname) {
+        alert("Нэрээ оруулна уу!");
+        return;
+      }
+      document.cookie = "nickname=" + encodeURIComponent(nickname) + "; path=/";
+      window.location.href = "game.html";
+    }
+  </script>
+</body>
+</html>
